@@ -5,11 +5,10 @@ public class HomeWork5 {
         // Задание №5
         //Найдите самое длинное слово в предложении, при условии, что в предложении все слова разной длины
         //Например, в "в предложении все слова разной длины" самое длинное слово "предложении"
-        String str5 = "в предложении все слова разной длины , но самое длинное";
+        String str5 = "в предложении все слова разной длины , но самое длинное - sdlfjhsdlfwelifhwljhddss";
         String[] words1 = str5.split(" ");
-        int size = words1.length;
-        for (int a = size; a >= 0; a--){
-            for (int b = 1; b < size; b++) {
+        for (int a = words1.length; a >= 0; a--){
+            for (int b = 1; b < words1.length; b++) {
                 if (words1[b - 1].length() < words1[b].length()) {
                     String t = words1[b - 1];
                     words1[b - 1] = words1[b];
